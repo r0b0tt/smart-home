@@ -1,0 +1,43 @@
+/* Colors */
+/* Fonts */
+@font-face {
+  font-family: roboto;
+  src: url("../fonts/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: raleway;
+  src: url("../fonts/Raleway-Regular.ttf"); }
+/* Buttons */
+.btn {
+  background: #a3daff;
+  padding: 10px 30px;
+  font-family: raleway;
+  font-weight: bold;
+  font-size: 80%;
+  border-radius: 5px;
+  color: #0080ff; }
+
+/** RESET **/
+* {
+  line-height: 1.5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  display: inline-block;
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+.wrap {
+  width: 85%;
+  max-width: 1920px;
+  margin: 0 auto; }
+
+/** Main Styles **/
+body header {
+  background: #0080ff;
+  color: #f4f4f4; }
+
+/*# sourceMappingURL=style.css.map */

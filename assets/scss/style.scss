@@ -1,0 +1,57 @@
+/* Colors */
+$blue1: #0080ff;
+$blue2: #03a6ff;
+$blue3: #1ec0ff;
+$blue4: #a3daff;
+
+/* Fonts */
+@font-face{
+    font-family: roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+@font-face{
+    font-family: raleway;
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+$raleway: raleway;
+$roboto: roboto;
+
+/* Buttons */
+.btn{
+    background: $blue4;
+    padding: 10px 30px;
+    font-family: $raleway;
+    font-weight: bold;
+    font-size: 80%;
+    border-radius: 5px;
+    color: $blue1;
+}
+
+/** RESET **/
+*{
+    line-height: 1.5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+
+.wrap{
+    width: 85%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/** Main Styles **/
+body{
+    header{
+        background: $blue1;
+        color: #f4f4f4; 
+    }
+}
