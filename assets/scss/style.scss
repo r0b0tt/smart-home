@@ -1,57 +1,176 @@
 /* Colors */
+
 $blue1: #0080ff;
 $blue2: #03a6ff;
 $blue3: #1ec0ff;
 $blue4: #a3daff;
-
 /* Fonts */
-@font-face{
+
+@font-face {
     font-family: roboto;
     src: url('../fonts/Roboto-Regular.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: raleway;
     src: url('../fonts/Raleway-Regular.ttf');
 }
+
 $raleway: raleway;
 $roboto: roboto;
+/* Mixins */
+
+@mixin transition($property,
+$time) {
+    -webkit-transition: $property $time;
+    -moz-transition: $property $time;
+    -o-transition: $property $time;
+    transition: $property $time;
+}
 
 /* Buttons */
-.btn{
-    background: $blue4;
+
+.btn {
+    color: $blue1;
     padding: 10px 30px;
     font-family: $raleway;
     font-weight: bold;
     font-size: 80%;
     border-radius: 5px;
-    color: $blue1;
+    @include transition(all,
+    0.4s);
+    &:hover {
+        box-shadow: 3px 3px 5px #333;
+    }
+}
+.btn-green{
+    background: $blue4;
 }
 
 /** RESET **/
-*{
+
+* {
     line-height: 1.5;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-a{
+
+a {
     display: inline-block;
     text-decoration: none;
 }
-img{
+
+img {
     width: 100%;
 }
 
-.wrap{
+video {
+    width: 100%;
+}
+
+.wrap {
     width: 85%;
     max-width: 1920px;
     margin: 0 auto;
 }
 
 /** Main Styles **/
-body{
-    header{
+
+body {
+    header {
         background: $blue1;
-        color: #f4f4f4; 
+        color: #f4f4f4;
+        nav {
+            padding: 10px 0;
+            font-family: $raleway;
+            font-weight: 700;
+            font-size: 90%;
+            a {
+                color: #f4f4f4;
+                padding: 0 5px;
+                @include transition(all,
+                0.4s);
+                &:hover {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+            #logo {
+                font-size: 150%;
+                color: $blue4;
+                padding-left: 0;
+            }
+        }
+        #hero {
+            width: 60%;
+            float: left;
+            margin-top: 100px;
+            h1 {
+                font-family: $raleway;
+            }
+            p {
+                font-family: $roboto;
+            }
+        }
+        #mobile-app {
+            width: 40%;
+            float: left;
+            img {
+                width: 60%;
+            }
+        }
+    }
+    #what-is-it {
+        background: $blue1;
+        color: #f4f4f4;
+        h2{
+            text-align: center;
+            font-family: $raleway;
+            color: $blue4;
+        }
+        #desc, #video {
+            font-family: $roboto;
+            width: 50%;
+            float: left;
+            padding: 20px;
+        }
+    }
+    #implementation {
+        background: $blue2;
+        color: #f4f4f4;
+        h2{
+            text-align: center;
+            font-family: $raleway;
+            color: $blue4;
+        }
+        .image, .desc{
+            width: 50%;
+            float: left;
+            padding: 20px;
+            font-family: $roboto;
+        }
+    }
+    #appliances {
+        background: $blue1;
+        color: #f4f4f4;
+        h2{
+            text-align: center;
+            font-family: $raleway;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        h3{
+            font-family: $raleway;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .image, .desc{
+            width: 50%;
+            float: left;
+            padding: 20px;
+            font-family: $roboto;
+        }
+        .slide:nth-child(2n) {
+            background: $blue2;
+        }
     }
 }

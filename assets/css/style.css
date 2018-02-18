@@ -6,15 +6,24 @@
 @font-face {
   font-family: raleway;
   src: url("../fonts/Raleway-Regular.ttf"); }
+/* Mixins */
 /* Buttons */
 .btn {
-  background: #a3daff;
+  color: #0080ff;
   padding: 10px 30px;
   font-family: raleway;
   font-weight: bold;
   font-size: 80%;
   border-radius: 5px;
-  color: #0080ff; }
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+  .btn:hover {
+    box-shadow: 3px 3px 5px #333; }
+
+.btn-green {
+  background: #a3daff; }
 
 /** RESET **/
 * {
@@ -30,6 +39,9 @@ a {
 img {
   width: 100%; }
 
+video {
+  width: 100%; }
+
 .wrap {
   width: 85%;
   max-width: 1920px;
@@ -39,5 +51,78 @@ img {
 body header {
   background: #0080ff;
   color: #f4f4f4; }
+  body header nav {
+    padding: 10px 0;
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 90%; }
+    body header nav a {
+      color: #f4f4f4;
+      padding: 0 5px;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s; }
+      body header nav a:hover {
+        color: rgba(255, 255, 255, 0.5); }
+    body header nav #logo {
+      font-size: 150%;
+      color: #a3daff;
+      padding-left: 0; }
+  body header #hero {
+    width: 60%;
+    float: left;
+    margin-top: 100px; }
+    body header #hero h1 {
+      font-family: raleway; }
+    body header #hero p {
+      font-family: roboto; }
+  body header #mobile-app {
+    width: 40%;
+    float: left; }
+    body header #mobile-app img {
+      width: 60%; }
+body #what-is-it {
+  background: #0080ff;
+  color: #f4f4f4; }
+  body #what-is-it h2 {
+    text-align: center;
+    font-family: raleway;
+    color: #a3daff; }
+  body #what-is-it #desc, body #what-is-it #video {
+    font-family: roboto;
+    width: 50%;
+    float: left;
+    padding: 20px; }
+body #implementation {
+  background: #03a6ff;
+  color: #f4f4f4; }
+  body #implementation h2 {
+    text-align: center;
+    font-family: raleway;
+    color: #a3daff; }
+  body #implementation .image, body #implementation .desc {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    font-family: roboto; }
+body #appliances {
+  background: #0080ff;
+  color: #f4f4f4; }
+  body #appliances h2 {
+    text-align: center;
+    font-family: raleway;
+    color: rgba(255, 255, 255, 0.8); }
+  body #appliances h3 {
+    font-family: raleway;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7); }
+  body #appliances .image, body #appliances .desc {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    font-family: roboto; }
+  body #appliances .slide:nth-child(2n) {
+    background: #03a6ff; }
 
 /*# sourceMappingURL=style.css.map */
