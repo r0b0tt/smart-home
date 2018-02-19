@@ -82,6 +82,8 @@ body {
         background: $blue1;
         color: #f4f4f4;
         nav {
+            position: absolute;
+            top: 0;
             padding: 10px 0;
             font-family: $raleway;
             font-weight: 700;

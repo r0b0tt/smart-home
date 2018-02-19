@@ -52,6 +52,8 @@ body header {
   background: #0080ff;
   color: #f4f4f4; }
   body header nav {
+    position: absolute;
+    top: 0;
     padding: 10px 0;
     font-family: raleway;
     font-weight: 700;
