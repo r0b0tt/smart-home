@@ -78,6 +78,65 @@ video {
 /** Main Styles **/
 
 body {
+    #side-nav {
+        background: rgba($color: #000000, $alpha: 0.7);
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        width: 0;
+        display: none;
+        height: 100%;
+        text-align: center;
+        color: #f4f4f4;
+        padding: 0 10px;
+        font-family: $roboto;
+        @include transition(width, 0.4s);
+        hr{
+            border-color: rgba($color: #000000, $alpha: 0.7);
+            width: 75%;
+        }
+        h1{
+            color: $blue3;
+            font-family: $raleway;
+            padding: 20px 0;
+        }
+        a{
+            color: inherit;
+            font-family: inherit;
+            display: block;
+            padding: 10px 0;
+            @include transition(all, 0.4s);
+            &:hover{
+                color: $blue2;
+            }
+        }
+
+        .fa-close{
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 10px 20px;
+            font-size: 1.75rem;
+            color: rgba($color: red, $alpha: 0.7);
+            cursor: pointer;
+            @include transition(all, 0.4s);
+            &:hover{
+                color: red;
+            }
+        }
+        p{
+            font-size: .75rem; 
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            a{
+                padding: inherit;
+                display: inline-block;
+            }
+        }
+    }
     header {
         background: $blue1;
         color: #f4f4f4;
@@ -103,6 +162,27 @@ body {
                 padding-left: 0;
             }
         }
+
+        #open-nav {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            background: #f4f4f4;
+            color: $blue1;
+            &:hover {
+                
+            }
+        }
+        .hero {
+            max-width: 1200px;
+            height: 100%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%)
+        }
         #hero {
             width: 60%;
             float: left;
@@ -110,7 +190,7 @@ body {
             h1 {
                 font-family: $raleway;
             }
-            p {
+            p { 
                 font-family: $roboto;
             }
         }
@@ -173,6 +253,28 @@ body {
         }
         .slide:nth-child(2n) {
             background: $blue2;
+        }
+    }
+
+    #pros-cons {
+        background: $blue2;
+        color: #f4f4f4;
+        h2{
+            text-align: center;
+            position: relative;
+            top: 10px;
+            font-family: $raleway;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        h3{
+            font-family: $raleway;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        #pros, #cons{
+            width: 50%;
+            float: left;
+            padding: 20px;
         }
     }
 }
