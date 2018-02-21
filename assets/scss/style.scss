@@ -172,8 +172,9 @@ body {
             cursor: pointer;
             background: #f4f4f4;
             color: $blue1;
+            @include transition(all, 0.4s);
             &:hover {
-                
+                background: rgba($color: #000000, $alpha: 0.7)
             }
         }
         .hero {
@@ -261,8 +262,6 @@ body {
         color: #f4f4f4;
         h2{
             text-align: center;
-            position: relative;
-            top: 10px;
             font-family: $raleway;
             color: rgba(255, 255, 255, 0.8);
         }
@@ -271,10 +270,11 @@ body {
             text-align: center;
             color: rgba(255, 255, 255, 0.7);
         }
-        #pros, #cons{
-            width: 50%;
-            float: left;
-            padding: 20px;
+        .slide {
+            div {
+                width: 75%;
+                margin: 0 auto;
+            }
         }
     }
 }
