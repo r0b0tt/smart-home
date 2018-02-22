@@ -189,6 +189,8 @@ body {
       float: left;
       padding: 20px;
       font-family: roboto; }
+    body #implementation .pros-cons h2 {
+      color: yellow; }
   body #appliances {
     background: #0080ff;
     color: #f4f4f4; }
@@ -207,20 +209,6 @@ body {
       font-family: roboto; }
     body #appliances .slide:nth-child(2n) {
       background: #03a6ff; }
-  body #pros-cons {
-    background: #03a6ff;
-    color: #f4f4f4; }
-    body #pros-cons h2 {
-      text-align: center;
-      font-family: raleway;
-      color: rgba(255, 255, 255, 0.8); }
-    body #pros-cons h3 {
-      font-family: raleway;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.7); }
-    body #pros-cons .slide div {
-      width: 100%;
-      margin: 0 auto; }
   @media screen and (max-width: 768px) {
     body header nav a {
       display: none; }

@@ -232,6 +232,11 @@ body {
             padding: 20px;
             font-family: $roboto;
         }
+        .pros-cons{
+            h2{
+                color: yellow;
+            }    
+        }
     }
     #appliances {
         background: $blue1;
@@ -257,26 +262,29 @@ body {
         }
     }
 
-    #pros-cons {
-        background: $blue2;
-        color: #f4f4f4;
-        h2{
-            text-align: center;
-            font-family: $raleway;
-            color: rgba(255, 255, 255, 0.8);
-        }
-        h3{
-            font-family: $raleway;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.7);
-        }
-        .slide {
-            div {
-                width: 100%;
-                margin: 0 auto;
-            }
-        }
-    }
+    // #pros-cons {
+    //     background: $blue2;
+    //     color: #f4f4f4;
+    //     h2{
+    //         text-align: center;
+    //         font-family: $raleway;
+    //         color: rgba(255, 255, 255, 0.8);
+    //     }
+    //     h3{
+    //         font-family: $raleway;
+    //         text-align: center;
+    //         color: rgba(255, 255, 255, 0.7);
+    //     }
+    //     .slide {
+    //         div {
+    //             width: 100%;
+    //             margin: 0 auto;
+    //         }
+    //     }
+    //     p{
+    //         color: #333;
+    //     }
+    // }
 
     /*********** MEDIA QUERIES ***********/
     @media screen and (max-width: 768px) {
