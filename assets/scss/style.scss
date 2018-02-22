@@ -272,9 +272,57 @@ body {
         }
         .slide {
             div {
-                width: 75%;
+                width: 100%;
                 margin: 0 auto;
             }
+        }
+    }
+
+    /*********** MEDIA QUERIES ***********/
+    @media screen and (max-width: 768px) {
+        header {
+            nav {
+                a{
+                    display: none;
+                }
+                #logo {
+                    display: inline-block;
+                }
+            }
+            .hero {
+                #hero {
+                    float: none;
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                }
+                #mobile-app {
+                    display: none;
+                }
+            }
+        }
+
+        #what-is-it{
+            #desc {
+                float: none;
+                width: 100%;
+                font-size: .9rem;
+            }
+            #video {
+                display: none;
+            }
+        }
+
+        #implementation, #appliances {
+            .desc {
+                float: none;
+                width: 100%;
+                font-size: .9rem;
+            }
+            .image{
+                display: none;
+            }
+               
         }
     }
 }
